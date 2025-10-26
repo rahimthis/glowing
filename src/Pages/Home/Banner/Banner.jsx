@@ -1,9 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// import style swiper
-import "swiper/css";
-import "swiper/css/pagination";
 
 // import required modules
 import { Navigation, Pagination } from "swiper/modules";
@@ -46,7 +43,7 @@ const slides = [
 
 const Banner = () => {
   return (
-    <div className="max-w-7xl mx-auto w-full h-[70vh]">
+    <div className=" w-full h-[90vh]">
       <Swiper
         modules={[Pagination, Navigation]}
         navigation={true}

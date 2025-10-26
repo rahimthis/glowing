@@ -27,7 +27,7 @@ const Navbar = () => {
                                 <NavLink
                                     to={`/${item === "Home" ? "" : item.toLowerCase()}`}
                                     className={({ isActive }) =>
-                                        `flex items-center gap-1 hover:text-blue-600 
+                                        `flex items-center text-xl gap-1 hover:text-blue-600 
                                      transition ${isActive ? "border-b-2 border-black" : ""
                                         }`
                                     }
@@ -39,23 +39,23 @@ const Navbar = () => {
                     </ul>
 
                     {/* LOGO */}
-                    <div className="text-2xl font-extrabold tracking-wide">
+                    <div className="text-3xl font-extrabold tracking-wide">
                         <Link to="/">GLOWING</Link>
                     </div>
 
                     {/* RIGHT ICONS + HAMBURGER */}
                     <div className="flex items-center space-x-5">
                         <button className="text-gray-800 hover:text-blue-600 transition">
-                            <FiSearch size={20} />
+                            <FiSearch size={23} />
                         </button>
                         <button className="text-gray-800 hover:text-blue-600 transition">
-                            <FiUser size={20} />
+                            <FiUser size={23} />
                         </button>
                         <button className="text-gray-800 hover:text-blue-600 transition">
-                            <FiStar size={20} />
+                            <FiStar size={23} />
                         </button>
                         <button className="relative text-gray-800 hover:text-blue-600 transition">
-                            <FiShoppingBag size={20} />
+                            <FiShoppingBag size={23} />
                             <span className="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
                                 0
                             </span>

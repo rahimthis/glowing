@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+
+
+/* hiden for swiper  */
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+
+/* Fix for Slick arrows hidden by Tailwind resets */
+.slick-prev:before,
+.slick-next:before {
+  color: #797979 !important; /* Change arrow color */
+  font-size: 30px !important; /* Make arrows visible */
+  padding: 3px !important;
+}
+
+/* Optional: position tweak */
+.slick-prev {
+  left: -35px !important;
+  z-index: 10;
+}
+.slick-next {
+  right: -35px !important;
+  z-index: 10;
+}
