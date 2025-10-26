@@ -92,7 +92,7 @@ export default function SlideProduct() {
     };
 
     return (
-        <section className="bg-white py-16 h-[80vh] ">
+        <section className="bg-white py-16  ">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="mb-12">
                     <h2 className="text-5xl font-semibold text-center ">

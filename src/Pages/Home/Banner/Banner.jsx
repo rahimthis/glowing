@@ -49,6 +49,7 @@ const Banner = () => {
         navigation={true}
         pagination={{ clickable: true }}
         grabCursor={true}
+        autoplay={{ delay: 3000 }}
         loop={true}
 
         className="h-full"
