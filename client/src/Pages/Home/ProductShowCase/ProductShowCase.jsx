@@ -59,7 +59,7 @@ const products = [
 
 const ProductShowCase = () => {
     return (
-        <section className="py-20 bg-white ">
+        <section className=" bg-white py-20">
             <div className="max-w-7xl mx-auto px-4 ">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl font-semibold text-gray-800">
@@ -69,10 +69,10 @@ const ProductShowCase = () => {
                         Made using clean, non-toxic ingredients, our products are designed for everyone.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 h-[70vh]">
+                <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
 
                     {/* Left side hero */}
-                    <div className="relative col-span-1 lg:col-span-2 group overflow-hidden rounded-2xl">
+                    <div className="relative col-span-1 lg:col-span-2 group overflow-hidden rounded-2xl  ">
                         {/* Image with zoom on hover */}
                         <img
                             src={model1}
@@ -94,25 +94,24 @@ const ProductShowCase = () => {
                     </div>
 
                     {/* Right side product grid */}
-                    <div className="col-span-1 lg:col-span-2">
-
+                    <div className="col-span-1 lg:col-span-3 ">
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                             {products.map((product) => (
                                 <div className="group relative bg-white rounded-xl  overflow-hidden cursor-pointer">
                                     {/* Image wrapper */}
-                                    <div className="relative w-full h-80">
+                                    <div className="relative w-full ">
                                         {/* Default image */}
                                         <img
                                             src={product.img1}
                                             alt={product.name}
-                                            className="w-full h-full object-contain transition-opacity duration-500 group-hover:opacity-0"
+                                            className="w-fit object-contain transition-opacity duration-500 group-hover:opacity-0"
                                         />
                                         {/* Hover image */}
                                         <img
                                             src={product.img2}
                                             alt={product.name}
-                                            className="absolute top-0 left-0 w-full h-full object-contain opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                                            className="absolute top-0 left-0 w-fit object-contain opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                                         />
 
                                         {/* Icons (hidden until hover) */}

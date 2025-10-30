@@ -6,6 +6,7 @@ import PromoSection from "../PromSection/PromSection";
 import FeaturesSection from "../FeaturesSection/FeaturesSection";
 import BrandLogos from "../BrandLogos/BrandLogos";
 import ProductShowCase from "../ProductShowCase/ProductShowCase";
+import MoreToDiscover from "../MoreToDiscover/MoreToDiscover";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <FeaturesSection />
       <BrandLogos />
       <ProductShowCase />
+      <MoreToDiscover />
     </>
   );
 };
