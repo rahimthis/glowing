@@ -18,9 +18,9 @@ const Footer = () => {
   return (
     <footer className="bg-gray-100 text-gray-800 py-12 px-6 md:px-20 relative overflow-hidden">
       {/* ✨ Subtle gradient hover effect background */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-gray-100/40 to-white/0 opacity-0 hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-gray-100/40 to-white/0 opacity-0 hover:opacity-100 transition-opacity duration-700 pointer-events-none "></div>
 
-      <div className="relative grid grid-cols-1 md:grid-cols-4 gap-10 z-10">
+      <div className="relative grid grid-cols-1 md:grid-cols-4 gap-10 z-10 max-w-7xl mx-auto">
         {/* 🏢 Company Info */}
         <div>
           <h3 className="font-semibold text-lg mb-4">Company</h3>
@@ -148,7 +148,7 @@ const Footer = () => {
 
       {/* 🧭 Bottom Footer */}
       <div className="relative mt-12 border-t pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 z-10">
-        <p className="hover:text-black transition-colors duration-300">
+        <p className="hover:text-black transition-colors duration-300 ">
           © Glowing 2025 | Powered by <a href=""> Abdur Rahim</a>
         </p>
 
