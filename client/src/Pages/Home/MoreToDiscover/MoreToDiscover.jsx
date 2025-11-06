@@ -7,11 +7,11 @@ import boxImage2 from "../../../assets/image-box-02.webp";
 
 const MoreToDiscover = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 ">
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Title */}
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-semibold text-gray-800">
+          <h2 className="text-5xl font-semibold text-black">
             More to Discover
           </h2>
           <p className="text-gray-500 text-xl mt-2">

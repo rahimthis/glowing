@@ -30,7 +30,7 @@ const FeaturesSection = () => {
         {features.map((feature, index) => (
           <div key={index}>
             <div className="flex justify-center">{feature.icon}</div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+            <h3 className="text-lg font-semibold text-black mb-2">
               {feature.title}
             </h3>
             <p className="text-gray-500">{feature.description}</p>

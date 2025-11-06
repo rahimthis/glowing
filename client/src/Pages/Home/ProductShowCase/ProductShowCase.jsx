@@ -1,5 +1,7 @@
 import React from "react"
 
+import '../../../index.css'
+
 // icon import form lucide react 
 import { Eye, Heart, ShoppingBag } from "lucide-react";
 
@@ -62,10 +64,10 @@ const ProductShowCase = () => {
         <section className=" bg-white py-20">
             <div className="max-w-7xl mx-auto px-4 ">
                 <div className="text-center mb-10">
-                    <h2 className="text-3xl font-semibold text-gray-800">
+                    <h2 className="text-5xl font-semibold text-black">
                         Customer favorite beauty essentials
                     </h2>
-                    <p className="text-gray-500 mt-2">
+                    <p className="text-gray-500 mt-3">
                         Made using clean, non-toxic ingredients, our products are designed for everyone.
                     </p>
                 </div>

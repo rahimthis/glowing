@@ -1,25 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 
 
 @layer utilities {
+
   /* Define the light sweep animation */
   @keyframes shine {
     0% {
-      transform: translateX(-100%) rotate(45deg); /* Start off left side */
+      transform: translateX(-100%) rotate(45deg);
+      /* Start off left side */
       opacity: 0;
     }
+
     50% {
-      opacity: 1; /* Brightest at middle */
+      opacity: 1;
+      /* Brightest at middle */
     }
+
     100% {
-      transform: translateX(100%) rotate(45deg); /* Exit right side */
+      transform: translateX(100%) rotate(45deg);
+      /* Exit right side */
       opacity: 0;
     }
   }
 
   /* Utility class to trigger the shine animation */
   .animate-shine {
-    animation: shine 2s linear infinite; /* Duration + repeat */
+    animation: shine 2s linear infinite;
+    /* Duration + repeat */
   }
 }
 
@@ -35,17 +53,20 @@
 /* Fix for Slick arrows hidden by Tailwind resets */
 .slick-prev:before,
 .slick-next:before {
-  color: #797979 !important; /* Change arrow color */
-  font-size: 30px !important; /* Make arrows visible */
+  color: #faeeee !important;
+  /* Change arrow color */
+  font-size: 30px !important;
+  /* Make arrows visible */
   padding: 3px !important;
 }
 
 /* Optional: position tweak */
 .slick-prev {
   left: -35px !important;
-  z-index: 10;
+  z-index: 20;
 }
+
 .slick-next {
   right: -35px !important;
-  z-index: 10;
+  z-index: 20;
 }

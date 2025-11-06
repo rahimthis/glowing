@@ -26,9 +26,9 @@ const BrandLogos = () => {
 
   return (
     <section className="py-16 bg-[#EDF1F0] mb-10">
-      <div className="max-w-6xl mx-auto px-4 text-center">
+      <div className="max-w-7xl mx-auto px-4 text-center">
         {/* Section title */}
-        <h2 className="text-4xl font-bold mb-10 text-gray-800">As Seen In</h2>
+        <h2 className="text-5xl font-bold mb-10 text-black">As Seen In</h2>
 
         {/* Card grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
