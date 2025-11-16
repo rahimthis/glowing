@@ -100,7 +100,7 @@ const ProductShowCase = () => {
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                             {products.map((product) => (
-                                <div className="group relative bg-white rounded-xl  overflow-hidden cursor-pointer">
+                                <div key={product.id} className="group relative bg-white rounded-xl  overflow-hidden cursor-pointer">
                                     {/* Image wrapper */}
                                     <div className="relative w-full ">
                                         {/* Default image */}
